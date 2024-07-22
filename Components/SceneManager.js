@@ -11,6 +11,7 @@ import { SkyboxEntity } from '/OBSEA/Assets/Skybox/SkyboxEntity.js';
 import * as FogShader from '/OBSEA/Assets/Terrain/FogShader.js'
 import { OceanEntity } from '/OBSEA/Assets/Ocean/OceanEntity.js';
 import { OBSEABuoyEntity } from '/OBSEA/Assets/OBSEABuoy/OBSEABuoyEntity.js';
+import { slagreef_obseaEntity } from '/OBSEA/Assets/SLAGREEF/slagreef_obseaEntity.js';
 import { UPCBuoyEntity } from '/OBSEA/Assets/UPCBuoy/UPCBuoyEntity.js';
 import { OBSEAStationEntity } from '/OBSEA/Assets/OBSEAStation/ObseaStationEntity.js';
 import { OBSEABiotopEntity } from '/OBSEA/Assets/OBSEABiotop/OBSEABiotopEntity.js'
@@ -124,7 +125,8 @@ class SceneManager{
     this.obseaBiotop = new OBSEABiotopEntity(scene);
     // OBSEA Crawler
     this.obseaCrawler = new OBSEACrawlerEntity(scene);
-
+    // OBSEA Slagreef
+    this.obseaSlagreef = new slagreef_obseaEntity(scene);
     // Flag
     this.flag = new FlagEntity(scene, () => {
       this.flag.root.position.y = 0.0;
