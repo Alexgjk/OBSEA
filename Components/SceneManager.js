@@ -161,11 +161,11 @@ class SceneManager{
     // Temperature text
     this.tempText = new TextMeshEntity(scene, "16º C", 0.25, 0x000000, () => {
       this.tempText.textObj.rotation.x = -Math.PI / 2;
-      this.tempText.textObj.position.set(3, -19.35, 0);
+      this.tempText.textObj.position.set(2, -19.35, 3);
     });
     this.salText = new TextMeshEntity(scene, "37.8 psu", 0.25, 0x000000, () => {
       this.salText.textObj.rotation.x = -Math.PI / 2;
-      this.salText.textObj.position.set(3, -19.35, 0.5);
+      this.salText.textObj.position.set(2, -19.35, 2.5);
     });
     // Potential salinity
 
